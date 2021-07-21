@@ -2,7 +2,7 @@
 //  DashboardViewModel.swift
 //  MyHotels
 //
-//  Created by Ajay Gupta on 21/07/21.
+//  Created by Bhanuteja on 21/07/21.
 //
 
 import UIKit

@@ -2,7 +2,7 @@
 //  HotelModel.swift
 //  MyHotels
 //
-//  Created by Ajay Gupta on 20/07/21.
+//  Created by Bhanuteja on 20/07/21.
 //
 
 import UIKit
