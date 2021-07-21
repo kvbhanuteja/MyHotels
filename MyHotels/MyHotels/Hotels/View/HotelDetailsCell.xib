@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="HotelDetailsTableViewCell" id="caA-L4-AjX" customClass="HotelDetailsTableViewCell" customModule="MyHotels" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="fTc-ce-OBx">
+                    <rect key="frame" x="8" y="30.5" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="0Am-ai-dBN"/>
+                        <constraint firstAttribute="width" constant="70" id="r9s-2F-03g"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9U3-ie-Qk3">
+                    <rect key="frame" x="86" y="8" width="320" height="23.5"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                    <color key="textColor" name="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bN-vA-OZe">
+                    <rect key="frame" x="374" y="59" width="32" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="jbT-KN-QKb"/>
+                    </constraints>
+                    <color key="tintColor" name="textColor"/>
+                    <state key="normal" image="trash.fill" catalog="system">
+                        <color key="titleColor" name="textColor"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bF-8k-OkI">
+                    <rect key="frame" x="344.5" y="59" width="20.5" height="20"/>
+                    <color key="tintColor" name="textColor"/>
+                    <state key="normal" image="square.and.pencil" catalog="system">
+                        <color key="titleColor" name="textColor"/>
+                    </state>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OqD-6Q-aAf">
+                    <rect key="frame" x="86" y="59" width="100" height="20"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Tmd-qx-NPV">
+                            <rect key="frame" x="0.0" y="-0.5" width="20" height="20"/>
+                            <color key="tintColor" name="textColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="9nx-IP-bv3"/>
+                                <constraint firstAttribute="width" constant="20" id="WN4-Qr-sCh"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2to-6I-ytn">
+                            <rect key="frame" x="20" y="-0.5" width="20" height="20"/>
+                            <color key="tintColor" name="textColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="3ac-en-FMe"/>
+                                <constraint firstAttribute="height" constant="20" id="B5C-X6-rzx"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2ER-TR-zBW">
+                            <rect key="frame" x="40" y="-0.5" width="20" height="20"/>
+                            <color key="tintColor" name="textColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="8CR-1t-fo7"/>
+                                <constraint firstAttribute="width" constant="20" id="dQr-b7-tAs"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="yst-b8-wwe">
+                            <rect key="frame" x="60" y="-0.5" width="20" height="20"/>
+                            <color key="tintColor" name="textColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="ApM-4d-rI2"/>
+                                <constraint firstAttribute="height" constant="20" id="ycv-m1-s3p"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="AdF-8x-eau">
+                            <rect key="frame" x="80" y="-0.5" width="20" height="20"/>
+                            <color key="tintColor" name="textColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="Gve-F0-wpd"/>
+                                <constraint firstAttribute="height" constant="20" id="LyK-h1-dAd"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="2to-6I-ytn" firstAttribute="height" secondItem="Tmd-qx-NPV" secondAttribute="height" id="D5t-xM-DSq"/>
+                        <constraint firstItem="yst-b8-wwe" firstAttribute="height" secondItem="Tmd-qx-NPV" secondAttribute="height" id="Kv9-Rg-jFQ"/>
+                        <constraint firstItem="AdF-8x-eau" firstAttribute="height" secondItem="Tmd-qx-NPV" secondAttribute="height" id="N8l-ml-Tff"/>
+                        <constraint firstItem="AdF-8x-eau" firstAttribute="width" secondItem="Tmd-qx-NPV" secondAttribute="width" id="faF-v6-dkq"/>
+                        <constraint firstItem="yst-b8-wwe" firstAttribute="width" secondItem="Tmd-qx-NPV" secondAttribute="width" id="fcV-7x-jZO"/>
+                        <constraint firstItem="2ER-TR-zBW" firstAttribute="height" secondItem="Tmd-qx-NPV" secondAttribute="height" id="nK5-Kb-l1c"/>
+                        <constraint firstItem="2ER-TR-zBW" firstAttribute="width" secondItem="Tmd-qx-NPV" secondAttribute="width" id="ru1-VF-Qn8"/>
+                        <constraint firstItem="2to-6I-ytn" firstAttribute="width" secondItem="Tmd-qx-NPV" secondAttribute="width" id="zNl-Zx-xPl"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="nMq-VM-0bQ"/>
+            <color key="backgroundColor" name="cellbackgrounf"/>
+            <constraints>
+                <constraint firstItem="OqD-6Q-aAf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="9U3-ie-Qk3" secondAttribute="bottom" constant="8" id="8DF-EM-xPo"/>
+                <constraint firstAttribute="trailing" secondItem="9U3-ie-Qk3" secondAttribute="trailing" constant="8" id="8oh-36-lqq"/>
+                <constraint firstItem="9U3-ie-Qk3" firstAttribute="leading" secondItem="fTc-ce-OBx" secondAttribute="trailing" constant="8" id="APx-3a-adk"/>
+                <constraint firstItem="nMq-VM-0bQ" firstAttribute="trailing" secondItem="3bN-vA-OZe" secondAttribute="trailing" constant="8" id="D3H-EA-G8c"/>
+                <constraint firstItem="9U3-ie-Qk3" firstAttribute="top" secondItem="caA-L4-AjX" secondAttribute="top" constant="8" id="D4d-ly-38n"/>
+                <constraint firstItem="yst-b8-wwe" firstAttribute="bottom" secondItem="3bN-vA-OZe" secondAttribute="bottom" id="Iz6-oJ-M2q"/>
+                <constraint firstItem="fTc-ce-OBx" firstAttribute="centerY" secondItem="nMq-VM-0bQ" secondAttribute="centerY" id="LWx-bt-1mv"/>
+                <constraint firstItem="nMq-VM-0bQ" firstAttribute="bottom" secondItem="3bN-vA-OZe" secondAttribute="bottom" constant="8" id="Zkp-Ff-ks7"/>
+                <constraint firstItem="OqD-6Q-aAf" firstAttribute="leading" secondItem="9U3-ie-Qk3" secondAttribute="leading" id="b8X-4B-U0H"/>
+                <constraint firstItem="3bN-vA-OZe" firstAttribute="leading" secondItem="9U3-ie-Qk3" secondAttribute="trailing" constant="-32" id="d2i-5h-EKp"/>
+                <constraint firstItem="3bN-vA-OZe" firstAttribute="leading" secondItem="6bF-8k-OkI" secondAttribute="trailing" constant="9" id="fWo-e9-Hzq"/>
+                <constraint firstItem="fTc-ce-OBx" firstAttribute="leading" secondItem="nMq-VM-0bQ" secondAttribute="leading" constant="8" id="hIR-Dh-knR"/>
+                <constraint firstItem="6bF-8k-OkI" firstAttribute="centerY" secondItem="3bN-vA-OZe" secondAttribute="centerY" id="hiJ-07-zRN"/>
+                <constraint firstItem="6bF-8k-OkI" firstAttribute="height" secondItem="3bN-vA-OZe" secondAttribute="height" id="oeE-wS-NcK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="delete" destination="3bN-vA-OZe" id="vFh-hY-g1s"/>
+                <outlet property="edit" destination="6bF-8k-OkI" id="vMd-PE-olf"/>
+                <outlet property="fiveStar" destination="AdF-8x-eau" id="aiG-jk-nCt"/>
+                <outlet property="fourStar" destination="yst-b8-wwe" id="Kxq-2v-qw7"/>
+                <outlet property="hotelImage" destination="fTc-ce-OBx" id="cqf-Ey-5ZH"/>
+                <outlet property="hotelName" destination="9U3-ie-Qk3" id="uu4-rs-6s5"/>
+                <outlet property="oneStar" destination="Tmd-qx-NPV" id="X3e-xK-Ibi"/>
+                <outlet property="threeStar" destination="2ER-TR-zBW" id="Zh2-pd-L2L"/>
+                <outlet property="twoStar" destination="2to-6I-ytn" id="crG-gE-Dxm"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="-410.15625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="splash" width="1356" height="1570"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <image name="trash.fill" catalog="system" width="121" height="128"/>
+        <namedColor name="cellbackgrounf">
+            <color red="0.27843137254901962" green="0.37647058823529411" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColor">
+            <color red="0.93300002813339233" green="0.93300002813339233" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
