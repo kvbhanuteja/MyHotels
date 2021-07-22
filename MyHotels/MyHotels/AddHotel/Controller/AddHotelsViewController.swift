@@ -27,6 +27,7 @@ class AddHotelsViewController: BaseClassViewController {
     @IBOutlet weak var fourStar: UIButton!
     @IBOutlet weak var fiveStar: UIButton!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var saveButton: UIButton!
     
     var actionType: ActionType = .add
     var hotelObject: HotelDetails?
@@ -41,6 +42,7 @@ class AddHotelsViewController: BaseClassViewController {
         super.viewDidLoad()
         imagePicker.delegate = self
         setUpDatePicker()
+        self.saveButton.addBorder()
         buttons = [oneStar,
                    twoStar,
                    threeStar,
@@ -88,7 +90,8 @@ class AddHotelsViewController: BaseClassViewController {
         self.rating = data.rating
         self.stayTF.text = getDate(date: data.dateOfStay)
         self.setUpRating()
-        imageView.contentMode = .scaleToFill
+        self.selectedDate = data.dateOfStay
+        imageView.contentMode = .scaleAspectFit
         self.costTF.text = "\(data.roomRate)"
         self.imageView.image = data.photo
     }
@@ -121,6 +124,7 @@ class AddHotelsViewController: BaseClassViewController {
     @objc func imageViewAction() {
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .photoLibrary
+        imagePicker.modalPresentationStyle = .fullScreen
         present(imagePicker, animated: true, completion: nil)
     }
     
@@ -184,10 +188,9 @@ extension AddHotelsViewController {
 extension AddHotelsViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            imageView.contentMode = .scaleToFill
+            imageView.contentMode = .scaleAspectFit
             imageView.image = pickedImage
         }
-
         dismiss(animated: true, completion: nil)
     }
     

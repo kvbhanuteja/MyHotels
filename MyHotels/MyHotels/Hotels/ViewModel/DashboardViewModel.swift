@@ -51,6 +51,8 @@ extension DashboardViewModel: HotelDataUpdateDelegate {
         }
         if dataModel.count <= 0 {
             self.reloadTableViewDelegate.noRecordView()
+        } else if dataModel.count == 1{
+            self.reloadTableViewDelegate.reloadTableView()
         } else {
             self.reloadTableViewDelegate.updateTableViewData(indexPath: IndexPath(row: rowIndex, section: 0))
         }

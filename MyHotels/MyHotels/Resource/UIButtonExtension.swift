@@ -12,6 +12,12 @@ extension UIButton {
     func addRating() {
         self.setImage(UIImage(systemName: Constants.Images.filledStar), for: .normal)
     }
+    
+    func addBorder() {
+        self.layer.borderWidth = 0.5
+        self.layer.borderColor = UIColor(named: Constants.Colors.textColor)?.cgColor
+        self.layer.cornerRadius = 5
+    }
 }
 
 extension UIImageView {    
